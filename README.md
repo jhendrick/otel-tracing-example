@@ -52,11 +52,6 @@ docker run -d --name jaeger \
   jaegertracing/all-in-one:latest
 ```
 
-8) Run the application again using the ```--require``` flag
-```
-node --require './tracing.js' app.js
-```
+8) Open a browser to http://localhost:8080 or refresh the page if you have it open. Trace data should now be exported to Jaegar.
 
-9) Open a browser to http://localhost:8080 or refresh the page if you have it open. Trace data should now be exported to Jaegar.
-
-10) Open Jaeger at http://localhost:16686. In the Jaegar UI Search screen, look for the service called ```otel-express-node``` under the 'Service' dropdown. Select it and click 'Find Traces' to view the trace. Click on one of the trace results to view the trace spans.
+9) Open Jaeger at http://localhost:16686. In the Jaegar UI Search screen, look for the service called ```otel-express-node``` under the 'Service' dropdown. Refresh the page if you don't see it immediately. Select it and click 'Find Traces' to view the trace. Click on one of the trace results to view the trace spans.
