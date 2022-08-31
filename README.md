@@ -23,16 +23,16 @@ You should see ```Listening for requests on http://localhost:8080``` as the outp
 npm install @opentelemetry/sdk-node @opentelemetry/api @opentelemetry/auto-instrumentations-node
 ```
 
-5) Run the application again using the ```--require``` flag to load the tracing code before the application code
-```
-node --require './tracing.js' app.js
-```
-Validate it starts as expected, then feel free to stop it.
-
-6) Next, to send trace data to a OTLP endpoint like Jaeger, install the trace exporter dependency
+5) Next, to send trace data to a OTLP endpoint like Jaeger, install the trace exporter dependency
 ```
 npm install --save @opentelemetry/exporter-trace-otlp-http
 ```
+
+6) Run the application again using the ```--require``` flag to load the tracing code before the application code
+```
+node --require './tracing.js' app.js
+```
+Validate it starts as expected.
 
 7) To try out the trace exporter, run Jaegar:
 ```
