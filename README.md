@@ -1,6 +1,6 @@
 # otel-tracing-example
 
-This is an example of how to setup and configure [OpenTelemetry](https://opentelemetry.io) within a sample Node.js application. This example uses [Jaeger](https://www.jaegertracing.io/) as the tracing backend and requires [Docker](https://www.docker.com/).
+This is an example of how to setup and configure [OpenTelemetry]([https://opentelemetry.io](https://github.com/open-telemetry/opentelemetry-js)) within a sample Node.js application. This example uses [Jaeger](https://www.jaegertracing.io/) as the tracing backend and requires [Docker](https://www.docker.com/).
 
 To run OpenTelemetry with this example, complete the following steps:
 
